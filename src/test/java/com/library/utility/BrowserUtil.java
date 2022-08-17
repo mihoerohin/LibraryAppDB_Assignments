@@ -392,6 +392,14 @@ public class BrowserUtil {
         select.selectByVisibleText(category);
     }
 
+    public static void clickElement(List<WebElement> element, String name){
+        for (WebElement webElement : element){
+            if (webElement.getText().equalsIgnoreCase(name)){
+                webElement.click();
+            }
+        }
+    }
+
 
 
 }
